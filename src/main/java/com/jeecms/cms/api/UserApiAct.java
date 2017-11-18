@@ -56,7 +56,7 @@ public class UserApiAct {
 	private final String WEIXIN_JSCODE_2_SESSION_URL="weixin.jscode2sessionUrl";
 	
 	/**
-	 * 添加会员用户
+	 * 添加用户
 	 * @param username 用户名   必选
 	 * @param email 邮箱 非必选
 	 * @param loginPassword 密码  必选
@@ -138,7 +138,7 @@ public class UserApiAct {
 	}
 	
 	/**
-	 * 修改会员资料
+	 * 修改资料
 	 * @param username 用户名   必选
 	 * @param realname 真实姓名 非必选
 	 * @param gender 性别 非必选
@@ -218,7 +218,7 @@ public class UserApiAct {
 	}
 	
 	/**
-	 * 修改会员密码
+	 * 修改密码
 	 * @param username 用户名   必选
 	 * @param email 邮箱 非必选
 	 * @param origPwd 原密码  必选

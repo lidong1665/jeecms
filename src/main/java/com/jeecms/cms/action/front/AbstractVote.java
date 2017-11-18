@@ -44,7 +44,7 @@ public abstract class AbstractVote {
 	public static final int VOTE_STATUS_NOT_BEGIN =202;
 	//投票已经结束
 	public static final int VOTE_STATUS_ENDED =203;
-	//规定时间内，同一会员不能重复投票
+	//规定时间内，同一不能重复投票
 	public static final int VOTE_STATUS_LIMIT_USER_REPEAT =204;
 	//规定时间内，同一IP不能重复投票
 	public static final int VOTE_STATUS_LIMIT_IP_REPEAT  =205;
@@ -234,7 +234,7 @@ public abstract class AbstractVote {
 		Integer hour = topic.getRepeateHour();
 		if (hour == null || hour > 0) {
 			Date vtime;
-			// 规定时间内，同一会员不能重复投票
+			// 规定时间内，同一不能重复投票
 			if (topic.getRestrictMember()) {
 				vtime = cmsVoteRecordMng.lastVoteTimeByUserId(user.getId(),
 						topicId);

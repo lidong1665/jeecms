@@ -360,7 +360,7 @@ public class ContentAct{
 		List<String> tplList = getTplContent(site, m, null);
 		// 内容手机模板列表
 		List<String> tplMobileList = getTplMobileContent(site, m, null);
-		// 会员组列表
+		// 组列表
 		List<CmsGroup> groupList = cmsGroupMng.getList();
 		// 内容类型
 		List<ContentType> typeList = contentTypeMng.getList(false);
@@ -461,7 +461,7 @@ public class ContentAct{
 		List<String> tplList = getTplContent(site, m, content.getTplContent());
 		// 内容手机模板列表
 		List<String> tplMobileList = getTplMobileContent(site, m, null);
-		// 会员组列表
+		// 组列表
 		List<CmsGroup> groupList = cmsGroupMng.getList();
 		Integer[] groupIds = CmsGroup.fetchIds(content.getViewGroups());
 		// 内容类型

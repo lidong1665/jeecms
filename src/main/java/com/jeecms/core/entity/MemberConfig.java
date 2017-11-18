@@ -33,7 +33,7 @@ public class MemberConfig {
 	 */
 	public static String REGISTER_ON = "register_on";
 	/**
-	 * 是否开启会员功能
+	 * 是否开启功能
 	 */
 	public static String MEMBER_ON = "member_on";
 	/**
@@ -81,7 +81,7 @@ public class MemberConfig {
 	}
 
 	/**
-	 * 是否开启会员功能
+	 * 是否开启功能
 	 * 
 	 * @return
 	 */
@@ -91,7 +91,7 @@ public class MemberConfig {
 	}
 
 	/**
-	 * 设置是否开启会员功能
+	 * 设置是否开启功能
 	 * 
 	 * @param checkOn
 	 */
@@ -105,7 +105,7 @@ public class MemberConfig {
 	}
 
 	/**
-	 * 设置是否会员审核功能
+	 * 设置是否审核功能
 	 * 
 	 * @param checkOn
 	 */

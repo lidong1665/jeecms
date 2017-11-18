@@ -45,7 +45,7 @@ import com.octo.captcha.service.CaptchaServiceException;
 import com.octo.captcha.service.image.ImageCaptchaService;
 
 /**
- * 前台会员注册Action
+ * 前台注册Action
  */
 @Controller
 public class RegisterAct {
@@ -62,11 +62,11 @@ public class RegisterAct {
 			HttpServletResponse response, ModelMap model) {
 		CmsSite site = CmsUtils.getSite(request);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
-		// 没有开启会员注册
+		// 没有开启注册
 		if (!mcfg.isRegisterOn()) {
 			return FrontUtils.showMessage(request, model,
 					"member.registerClose");

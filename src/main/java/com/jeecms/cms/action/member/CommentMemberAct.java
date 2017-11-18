@@ -27,7 +27,7 @@ import com.jeecms.core.web.util.CmsUtils;
 import com.jeecms.core.web.util.FrontUtils;
 
 /**
- * 会员中心获取评论Action
+ * 中心获取评论Action
  * 
  * @author 江西金磊科技发展有限公司
  * 
@@ -58,7 +58,7 @@ public class CommentMemberAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -82,7 +82,7 @@ public class CommentMemberAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -117,7 +117,7 @@ public class CommentMemberAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -150,7 +150,7 @@ public class CommentMemberAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}

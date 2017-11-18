@@ -19,14 +19,14 @@ public interface MessageTemplate {
 	public String getForgotPasswordText();
 	
 	/**
-	 * 会员注册主题
+	 * 注册主题
 	 * 
 	 * @return
 	 */
 	public String getRegisterSubject();
 
 	/**
-	 * 会员注册内容
+	 * 注册内容
 	 * 
 	 * @return
 	 */

@@ -74,7 +74,7 @@ public class WeiXinAuthAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -114,7 +114,7 @@ public class WeiXinAuthAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}

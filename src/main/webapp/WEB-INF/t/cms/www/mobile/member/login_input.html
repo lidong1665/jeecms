@@ -37,16 +37,15 @@ window.location.href=window.document.referrer;
   <header class="header">
   登录
   <div class="header-icon-left"><a class="header-back" href="javascript:return_prepage();"></a></div>
-  <div class="header-icon-right"><a class="to-register" href="${base}/register.jspx">注册</a></div>
   </header>
   <form id="jvForm" action="${base}/login.jspx" method="post">
   <div class="login-box">
     [#if loginSource??]
         <div class="login-source">
    	[#if loginSource=="needPerm"]
-   	 该文章需要会员登录后才能浏览！
+   	 该文章需要登录后才能浏览！
    	[#elseif loginSource=="charge"]
-   	 该文章是收费文章，需要会员登录付费后才能浏览！
+   	 该文章是机密文章，需要登录后才能浏览！
    	[/#if]
          </div>
     [/#if] 
@@ -77,7 +76,7 @@ window.location.href=window.document.referrer;
 				[/#if]
 [#if success??]
 				[#if success]
-					 <div class="login-source">注册成功！</div>
+					 <!--<div class="login-source">注册成功！</div>-->
 				[/#if]
     
       [/#if]
@@ -89,88 +88,6 @@ window.location.href=window.document.referrer;
     <div class="login-btn"><input type="submit" class="login-submit" value="登 录"></div>
     <div class="login-txt"><a class="to-fpw" href="${base}/member/forgot_password.jspx">忘记密码?</a></div>
   </div>
-  <div id="content-share" class="login-share">
-      <h1><span class=" login-nav">一键登录</span></h1>
-      <div class="quick-list clearfix">
-      
-      <a class="quick-qq" id="qqLoginBtn" title="用QQ账号登录"></a>
-      <script type="text/javascript" src="http://qzonestyle.gtimg.cn/qzone/openapi/qc_loader.js" data-appid="${site.config.qqID!}" data-redirecturi="http://${site.domain}/public_auth.jspx" charset="utf-8"></script>
-					<script type="text/javascript">
-						//插入按钮的节点qqLoginBtn id
-					    QC.Login({btnId:"qqLoginBtn",size: "A_M"}, function(reqData, opts){//登录成功
-					       //根据返回数据，更换按钮显示状态方法
-					       var dom = document.getElementById(opts['btnId']),
-					       _logoutTemplate=[
-					            //头像
-					         //   '<span><img src="{figureurl}" class="{size_key}"/></span>',
-					            //昵称
-					            '<span>{nickname}</span>',
-					            //退出
-					            '<span><a href="javascript:QC.Login.signOut();">退出</a></span>'    
-					       ].join("");
-					       dom && (dom.innerHTML = QC.String.format(_logoutTemplate, {
-					           nickname : QC.String.escHTML(reqData.nickname), //做xss过滤
-					           figureurl : reqData.figureurl
-					       }));
-					       var userId=null;
-                           [#if user??]
-                           userId="${user.id}";
-                           [/#if]
-                           if(QC.Login.check()&&userId==null){
-                                     QC.Login.signOut();          
-                           }
-					   });
-					 </script>
-     
-      <a class="quick-tx" id="qqwebo_login_btn" title="用腾讯微博账号登录"></a>
-      <script type="text/javascript" src="http://mat1.gtimg.com/app/openjs/openjs.js"></script>
-                    	<script type="text/javascript">
-                    		T.init({
-                    		    appkey: ${site.config.qqWeboID!}, 
-                    		    autoclose:false,
-                    		    callbackurl:"http://${site.domain}/public_auth.jspx"
-                    		});
-                    		 function logout(){
-                                 T.logout(function (loginStatus) { // 登出用户
-			    					// 登录成功
-								});
-                			}
-                    		$(function() {
-                        		$("#qqwebo_login_btn").click(function(){
-                        			T.login(function (loginStatus) { // 弹出登录窗口
-       							     // 本次登录成功
-       							       $.cookie("qqWeboId",loginStatus.openid);
-       							 	},function (error) {
-       							 	});
-                            	});
-                    		});
-						</script>
-	
-      
-      <a class="quick-sina" id="wb_connect_btn" title="用新浪微博账号登录"></a>
-      <script src="http://tjs.sjs.sinajs.cn/open/api/js/wb.js?appkey=${site.config.sinaID!}" type="text/javascript" charset="utf-8"></script>
-						<script type="text/javascript">
-						 WB2.anyWhere(function(W){
-						 W.widget.connectButton({
-						  id: "wb_connect_btn",
-						  type: '3,2',
-						  callback : {
-						   login:function(o){
-						    //登录成功之后执行
-						    location="${base}/public_auth.jspx";
-						   },
-						   logout:function(){
-						    //退出之后执行退出本地用户
-      						location="${base}/logout.jspx?returnUrl=/";
-						   }
-						  }
-						 });
-						});
-						</script>
-      
-    </div>
-       
-</div>
   </form>
   
 </div>

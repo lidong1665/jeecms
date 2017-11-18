@@ -8,7 +8,7 @@ import com.jeecms.core.entity.CmsUser;
 /**
  * 提供一些CMS系统中使用到的共用方法
  * 
- * 比如获得会员信息,获得后台站点信息
+ * 比如获得信息,获得后台站点信息
  */
 public class CmsUtils {
 	/**

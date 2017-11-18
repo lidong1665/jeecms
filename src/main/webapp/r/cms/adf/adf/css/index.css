@@ -699,7 +699,7 @@ h1 .position:before{width:12px; height:13px; display:inline-block; content:""; p
 .login-submit{float:left; margin-left:26px;}
 .login-submit input{width:93px; height:93px; background:url(../images/login-submit.png) no-repeat; cursor:pointer; display:block; outline:none;}
 
-/*会员中心*/
+/*中心*/
 .member-con{width:1200px; margin:0 auto; padding-top:18px;}
 .m-pos{color:#999999; font-size:14px;}
 .m-pos a{color:#999999; font-size:14px;}

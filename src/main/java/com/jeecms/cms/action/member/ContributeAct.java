@@ -27,7 +27,7 @@ import com.jeecms.core.web.util.CmsUtils;
 import com.jeecms.core.web.util.FrontUtils;
 
 /**
- * 会员投稿Action
+ * 投稿Action
  * 
  */
 @Controller
@@ -40,7 +40,7 @@ public class ContributeAct extends AbstractContentMemberAct {
 	public static final String CONTRIBUTE_UPLOADATTACHMENT = "tpl.uploadAttachment";
 
 	/**
-	 * 会员投稿列表
+	 * 投稿列表
 	 * 
 	 * @param title
 	 *            文章标题
@@ -61,7 +61,7 @@ public class ContributeAct extends AbstractContentMemberAct {
 	}
 
 	/**
-	 * 会员投稿添加
+	 * 投稿添加
 	 * 
 	 * @param request
 	 * @param model
@@ -74,7 +74,7 @@ public class ContributeAct extends AbstractContentMemberAct {
 	}
 
 	/**
-	 * 会员投稿保存
+	 * 投稿保存
 	 * 
 	 * @param id
 	 *            文章ID
@@ -117,7 +117,7 @@ public class ContributeAct extends AbstractContentMemberAct {
 	}
 
 	/**
-	 * 会员投稿修改
+	 * 投稿修改
 	 * 
 	 * @param id
 	 *            文章ID
@@ -176,7 +176,7 @@ public class ContributeAct extends AbstractContentMemberAct {
 	}
 
 	/**
-	 * 会员投稿删除
+	 * 投稿删除
 	 * 
 	 * @param ids
 	 *            待删除的文章ID数组

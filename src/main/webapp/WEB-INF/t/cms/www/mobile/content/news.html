@@ -36,7 +36,7 @@ Cms.siteFlow("${base}", location.href, document.referrer,"${site.config.flowSwit
     <div class="content-txt">
       [#if preview??]
       [@text_cut s=txt! len=100  append="..."/]<br/>
-            您需要更高的权限浏览全部内容!<br/>以下会员组可浏览全部内容:
+            您需要更高的权限浏览全部内容!<br/>以下组可浏览全部内容:
             [#list groups as g]
             ${g.name!}[#if g_has_next],[/#if]
             [/#list]              

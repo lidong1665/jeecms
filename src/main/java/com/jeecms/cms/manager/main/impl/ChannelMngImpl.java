@@ -186,7 +186,7 @@ public class ChannelMngImpl implements ChannelMng {
 		Map<String, String> attrOrig = bean.getAttr();
 		attrOrig.clear();
 		attrOrig.putAll(attr);
-		// 更新浏览会员组关联
+		// 更新浏览组关联
 		for (CmsGroup g : bean.getViewGroups()) {
 			g.getViewChannels().remove(bean);
 		}
@@ -198,7 +198,7 @@ public class ChannelMngImpl implements ChannelMng {
 				bean.addToViewGroups(g);
 			}
 		}
-		// 更新投稿会员组关联
+		// 更新投稿组关联
 		for (CmsGroup g : bean.getContriGroups()) {
 			g.getContriChannels().remove(bean);
 		}

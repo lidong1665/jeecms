@@ -76,7 +76,7 @@ public class MessageAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -118,7 +118,7 @@ public class MessageAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -171,7 +171,7 @@ public class MessageAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -189,7 +189,7 @@ public class MessageAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -217,7 +217,7 @@ public class MessageAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -256,7 +256,7 @@ public class MessageAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -294,7 +294,7 @@ public class MessageAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -332,7 +332,7 @@ public class MessageAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -359,7 +359,7 @@ public class MessageAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -397,7 +397,7 @@ public class MessageAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -442,7 +442,7 @@ public class MessageAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}
@@ -604,7 +604,7 @@ public class MessageAct {
 		if (user == null) {
 			object.put("result", false);
 		} else {
-			// 会员只能在会员之间发送站内信
+			// 只能在之间发送站内信
 			Boolean exist = userMng.usernameNotExistInMember(username);
 			object.put("result", true);
 			object.put("exist", exist);
@@ -645,7 +645,7 @@ public class MessageAct {
 		CmsUser user = CmsUtils.getUser(request);
 		FrontUtils.frontData(request, model, site);
 		MemberConfig mcfg = site.getConfig().getMemberConfig();
-		// 没有开启会员功能
+		// 没有开启功能
 		if (!mcfg.isMemberOn()) {
 			return FrontUtils.showMessage(request, model, "member.memberClose");
 		}

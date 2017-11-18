@@ -139,9 +139,9 @@ public class ChannelAct {
 		List<CmsModelItem> itemList = cmsModelItemMng.getList(modelId, true,
 				false);
 		List<CmsGroup> groupList = cmsGroupMng.getList();
-		// 浏览会员组列表
+		// 浏览组列表
 		List<CmsGroup> viewGroups = groupList;
-		// 投稿会员组列表
+		// 投稿组列表
 		Collection<CmsGroup> contriGroups;
 		if (parent != null) {
 			contriGroups = parent.getContriGroups();
@@ -234,17 +234,17 @@ public class ChannelAct {
 		// 模型项列表
 		List<CmsModelItem> itemList = cmsModelItemMng.getList(m.getId(), true,
 				false);
-		// 浏览会员组列表、浏览会员组IDS
+		// 浏览组列表、浏览组IDS
 		List<CmsGroup> viewGroups = groupList;
 		Integer[] viewGroupIds = CmsGroup.fetchIds(channel.getViewGroups());
-		// 投稿会员组列表
+		// 投稿组列表
 		Collection<CmsGroup> contriGroups;
 		if (parent != null) {
 			contriGroups = parent.getContriGroups();
 		} else {
 			contriGroups = groupList;
 		}
-		// 投稿会员组IDS
+		// 投稿组IDS
 		Integer[] contriGroupIds = CmsGroup.fetchIds(channel.getContriGroups());
 		// 管理员列表
 		Collection<CmsUser> users;

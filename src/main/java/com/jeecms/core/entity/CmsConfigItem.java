@@ -7,7 +7,7 @@ import com.jeecms.core.entity.base.BaseCmsConfigItem;
 
 
 public class CmsConfigItem extends BaseCmsConfigItem {
-	//会员注册模型
+	//注册模型
 	public static final int CATEGORY_REGISTER=1;
 	//留言模型
 	public static final int CATEGORY_GUESTBOOK=2;

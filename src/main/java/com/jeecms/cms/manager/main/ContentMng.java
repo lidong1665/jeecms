@@ -38,7 +38,7 @@ public interface ContentMng {
 									Integer siteId, int orderBy, int pageNo, int pageSize);
 
 	/**
-	 * 获得文章分页。供会员中心使用。
+	 * 获得文章分页。供中心使用。
 	 * 
 	 * @param title
 	 *            文章标题
@@ -47,7 +47,7 @@ public interface ContentMng {
 	 * @param siteId
 	 *            站点ID
 	 * @param memberId
-	 *            会员ID
+	 *            ID
 	 * @param pageNo
 	 *            页码
 	 * @param pageSize

@@ -113,14 +113,14 @@ public class CmsMessageAct {
 			messageInfoSet(message, receiverMessage, user, msgReceiverUser,
 					now, site, request);
 		}
-		// 按会员组推送站内信
+		// 按组推送站内信
 		if (groupId != null && !groupId.equals(-1)) {
 			List<CmsUser> users;
 			CmsUser tempUser;
 			CmsMessage tempMsg;
 			CmsReceiverMessage tempReceiverMsg;
 			if (groupId.equals(0)) {
-				// 所有未禁用会员
+				// 所有未禁用
 				users = userMng.getList(null, null, null, null, false, false,
 						null);
 				if (users != null && users.size() > 0) {
@@ -142,7 +142,7 @@ public class CmsMessageAct {
 					}
 				}
 			} else {
-				// 非禁用的会员
+				// 非禁用的
 				users = userMng.getList(null, null, null, groupId, false,
 						false, null);
 				if (users != null && users.size() > 0) {

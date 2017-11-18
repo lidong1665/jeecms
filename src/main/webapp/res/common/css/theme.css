@@ -111,8 +111,8 @@ a.pn-opt:active {color: #0070b8;}
 .generate-index-page/*生成首页HTML*/{background:url(../img/theme/scsy.jpg) no-repeat; width:115px; height:20px; color:#666666; line-height:20px; text-indent:18px; border:0 none; cursor:pointer;}
 .sys-setting/*系统设置*/{background:url(../img/theme/xtsz.jpg) no-repeat; width:90px; height:18px; color:#15466e; line-height:18px; text-indent:18px; border:0 none; cursor:pointer;}
 .login-setting/*登录设置*/{background:url(../img/theme/dlsz.jpg) no-repeat; width:81px; height:18px; color:#15466e; line-height:18px; text-indent:18px; border:0 none; cursor:pointer;}
-.member-setting/*会员设置*/{background:url(../img/theme/hysz.jpg) no-repeat; width:84px; height:18px; color:#15466e; line-height:18px; text-indent:18px; border:0 none; cursor:pointer;}
-.memberzhuce-setting/*会员注册模型*/{background:url(../img/theme/hyzcmx.jpg) no-repeat; width:115px; height:18px; color:#15466e; line-height:18px; text-indent:18px; border:0 none; cursor:pointer;}
+.member-setting/*设置*/{background:url(../img/theme/hysz.jpg) no-repeat; width:84px; height:18px; color:#15466e; line-height:18px; text-indent:18px; border:0 none; cursor:pointer;}
+.memberzhuce-setting/*注册模型*/{background:url(../img/theme/hyzcmx.jpg) no-repeat; width:115px; height:18px; color:#15466e; line-height:18px; text-indent:18px; border:0 none; cursor:pointer;}
 .mark-setting/*水印设置*/{background:url(../img/theme/sysz.jpg); width:81px; height:18px; color:#15466e; line-height:18px; text-indent:18px; border:0 none; cursor:pointer;}
 
 .jk-setting/*接口设置*/{background:url(../img/theme/hysz.jpg) no-repeat; width:84px; height:18px; color:#15466e; line-height:18px; text-indent:18px; border:0 none; cursor:pointer;}

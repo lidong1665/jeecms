@@ -25,7 +25,7 @@ public class Constants {
 	 */
 	public static final String TPLDIR_TOPIC = "topic";
 	/**
-	 * 会员中心模板
+	 * 中心模板
 	 */
 	public static final String TPLDIR_MEMBER = "member";
 	/**

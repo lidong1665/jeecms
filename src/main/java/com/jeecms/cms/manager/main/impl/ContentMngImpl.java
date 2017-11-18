@@ -302,7 +302,7 @@ public class ContentMngImpl implements ContentMng, ChannelDeleteChecker {
 				}
 			}
 		}
-		// 保存浏览会员组
+		// 保存浏览组
 		if (viewGroupIds != null && viewGroupIds.length > 0) {
 			for (Integer gid : viewGroupIds) {
 				bean.addToGroups(cmsGroupMng.findById(gid));
@@ -369,7 +369,7 @@ public class ContentMngImpl implements ContentMng, ChannelDeleteChecker {
 		bean.setUser(user);
 		Byte userStep;
 		if (forMember) {
-			// 会员的审核级别按0处理
+			// 的审核级别按0处理
 			userStep = 0;
 		} else {
 			CmsSite site = bean.getSite();
@@ -422,7 +422,7 @@ public class ContentMngImpl implements ContentMng, ChannelDeleteChecker {
 		// 审核更新处理，如果站点设置为审核退回，且当前文章审核级别大于管理员审核级别，则将文章审核级别修改成管理员的审核级别。
 		Byte userStep;
 		if (forMember) {
-			// 会员的审核级别按0处理
+			// 的审核级别按0处理
 			userStep = 0;
 		} else {
 			CmsSite site = bean.getSite();
@@ -503,7 +503,7 @@ public class ContentMngImpl implements ContentMng, ChannelDeleteChecker {
 				}
 			}
 		}
-		// 更新浏览会员组
+		// 更新浏览组
 		Set<CmsGroup> groups = bean.getViewGroups();
 		groups.clear();
 		if (viewGroupIds != null && viewGroupIds.length > 0) {
